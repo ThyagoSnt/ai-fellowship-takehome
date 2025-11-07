@@ -5,29 +5,7 @@ End-to-end solution to extract structured fields from PDFs from `(label, extract
 
 ---
 
-## 1) How to run
-
-### Docker Compose
-```bash
-make docker-build
-make docker-up
-make api_docker
-# API: http://localhost:8000
-# Docs: http://localhost:8000/docs   <- You can see de documentation of FastApi here
-# Frontend: http://localhost:3000    <- You can acess this link to see the frontend page
-```
-
-> **Tip:** The UI allows configuring the `API Base URL`. The default is `http://localhost:8000`.
-
-
-If need help with other functionalities:
-```bash
-make help
-```
-
----
-
-## 2) Configuration
+## 1) Configuration
 
 ### Environment variables (examples)
 Create a `.env` at the project root:
@@ -63,7 +41,7 @@ WARMUP_TIMEOUT_READ=25
 
 ---
 
-## 3) Folder structure (summary)
+## 2) Folder structure (summary)
 ```
 .
 ├── ai-fellowship-data/            # sample and test data (dataset.json + PDFs)
@@ -75,6 +53,28 @@ WARMUP_TIMEOUT_READ=25
 ├── .env
 ├── .gitignore
 └── README.md
+```
+
+---
+
+## 3) How to run
+
+### Docker Compose
+```bash
+make docker-build
+make docker-up
+make api_docker
+# API: http://localhost:8000
+# Docs: http://localhost:8000/docs   <- You can see de documentation of FastApi here
+# Frontend: http://localhost:3000    <- You can acess this link to see the frontend page
+```
+
+> **Tip:** The UI allows configuring the `API Base URL`. The default is `http://localhost:8000`.
+
+
+If need help with other functionalities:
+```bash
+make help
 ```
 
 ---
