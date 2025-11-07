@@ -1,0 +1,4 @@
+paths:
+  json_path: ./ai-fellowship-data/dataset.json
+  pdfs_root_path: ./ai-fellowship-data/files
+  openai_llm: gpt-5-mini-2025-08-07

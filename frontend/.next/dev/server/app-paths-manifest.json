@@ -1,0 +1,5 @@
+{
+  "/batch/page": "app/batch/page.js",
+  "/configuration/page": "app/configuration/page.js",
+  "/page": "app/page.js"
+}
